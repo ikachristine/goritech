@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Lupa Password - School Bus by Go-Ritech</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+   <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light"><a href="index.html"><span>School Bus</span></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Beranda</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">Tentang</a></li>
+          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          
+           <li><a class="getstarted scrollto" href="login.html">Log in</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Ganti Password</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Ganti Password</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+        <p>
+
+
+        <div class="limiter">
+          <div class="container-login100">
+
+
+            <div class="wrap-login100">
+
+              <div class="row" id="divutama">
+                <div class="col" id="div1"></div>
+                <div id="booking"  class="col-md-5 align-self-center">
+
+                  <form id="conf" class="login100-form validate-form" method='POST' action="">
+                    <span class="login100-form-title p-b-43">
+                      <h2>Lupa Password</h2>
+                    </span>
+
+                    <div id="kirimEmail">
+                      <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <span class="label-input100"><br> Email: <br></span>
+                        <input class="input100" type="email" name="email" required>
+
+                        <span class="focus-input100"></span>
+
+                      </div>
+
+
+                      <div class="container-login100-form-btn"><br>
+                        <button class="login100-form-btn" id="Confirmation" name="Confirmation" type='button'
+                          onclick="confirmation()">
+                          Send Confirmation
+                        </button>
+
+                      </div>
+                    </div>
+
+
+                  </form>
+
+
+
+                  <div class="wrap-login100" id="divgantipassw" style="display:none">
+
+
+                    <form id="gantipassw" class="login100-form validate-form" method='POST' action="index.html">
+                      <span class="login100-form-title p-b-43">
+                        <h2></h2>
+                      </span>
+
+
+                      <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <span class="label-input100"><br> Confirmation Code: <br></span>
+                        <input class="input100" type="text" name="email" id="email" required>
+                        <span class="focus-input100"></span>
+                      </div>
+
+
+                      <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <span class="label-input100"><br> Password: <br> </span>
+                        <input class="input100" type="password" name="pass1" id="pass1" required>
+                        <span class="focus-input100"></span>
+
+                      </div>
+                      <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <span class="label-input100"><br> Re-type Password: <br> </span>
+                        <input class="input100" type="password" name="pass2" id="pass2" required>
+                        <span class="focus-input100"></span>
+
+                      </div>
+
+
+
+
+                      <div class="container-login100-form-btn">
+                        <br>
+                        <button type='button' onclick="Login(this)">
+                          Ganti Password
+                        </button>
+
+                      </div>
+
+
+
+                    </form>
+
+                  </div>
+                </div>
+
+                <div class="col"></div>
+
+              </div>
+            </div>
+          </div>
+
+          <!--------akhir login-->
+
+          </p>
+        </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>School Bus by Go-Ritech</h3>
+      <p>aplikasi Antar-Jemput anak sekolah online yang dibuat dengan harapan menjadi solusi bagi orang tua yang kesulitan mengatur waktu untuk Antar-Jemput anak mereka.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/go.ritech/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Go-Ritech</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+<!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    function confirmation() {
+      var x = document.getElementById("conf");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        isvalidate = x[i].checkValidity();
+        if (!isvalidate) {
+          x.reportValidity();
+          return 0;
+        }
+      }
+
+      swal({
+        title: "Terima Kasih",
+        text: "Confirmation Code sudah dikirimkan ke email anda, silakan di cek ...",
+        icon: "success",
+        button: "Ok",
+      })
+      document.getElementById("divgantipassw").style.display = "block";
+      document.getElementById("kirimEmail").style.display = "none";
+      
+      return 0
+    }
+
+    function Login(x) {
+      //harus type button
+      var x = document.getElementById("gantipassw");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        isvalidate = x[i].checkValidity();
+        if (!isvalidate) {
+          x[i].reportValidity();
+          return 0;
+        }
+      }
+
+     //if (x["pass1"].valueOf() !== x["pass2"].valueOf()) {
+      // x["pass2"].setCustomValidity('Password tidak sama !');
+        //return 0;
+     // }
+
+
+      swal({
+        title: "Terima Kasih",
+        text: "Penggantian Password sukses dilakukan ! Silahkan Anda Login Kembali",
+        icon: "success",
+        button: "Ok",
+        closeOnClickOutside: "false"
+      })
+      //alert("Login Sukses");
+      //window.open("index.html", "_self");
+
+    }
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
